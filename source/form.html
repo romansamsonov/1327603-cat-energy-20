@@ -7,10 +7,10 @@
 
   <body>
     <header class="header">
-      <a class="header__logo--icon">
+      <a class="header__logo header__logo--icon">
         <img src="img/svg/logo-mobile.svg" width="33" height="38" alt="Иконка кэт энерджи">
       </a>
-      <img class="header__logo--name" src="img/svg/logo-name.svg" width="101" height="18" alt="Кэт энерджи">
+      <img class="header__logo header__logo--name" src="img/svg/logo-name.svg" width="101" height="18" alt="Кэт энерджи">
       <nav class="nav">
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -36,17 +36,17 @@
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="form__fieldset">
             <legend class="visually-hidden">Данные кота</legend>
-            <label class="form__group">
-              <span class="form__name">Имя:*</span>
-              <input class="form__field" type="text" name="name" placeholder="Барсик">
+            <label class="form__label">
+              Имя:*
+              <input class="form__input" type="text" name="name" placeholder="Барсик" required>
             </label>
-            <label class="form__group">
-              <span class="form__name">Вес (кг):*</span>
-              <input class="form__field" type="text" name="weight" placeholder="7">
+            <label class="form__label">
+              Вес (кг):*
+              <input class="form__input" type="text" name="weight" placeholder="7" required>
             </label>
-            <label class="form__group">
-              <span class="form__name">Возраст (лет):</span>
-              <input class="form__field" type="text" name="age" placeholder="7">
+            <label class="form__label">
+              Возраст (лет):
+              <input class="form__input" type="text" name="age" placeholder="7">
             </label>
           </fieldset>
           <fieldset class="form__fieldset">
@@ -55,38 +55,38 @@
               <li class="radio__item">
                 <label class="radio__label">
                   <input class="radio__input" type="radio" name="program" value="Похудение" checked>
-                  <span class="radio__name">Похудение</span>
+                  Похудение
                 </label>
               </li>
               <li class="radio__item">
                 <label class="radio__label">
                   <input class="radio__input" type="radio" name="program" value="Набор массы">
-                  <span class="radio__name">Набор массы</span>
+                  Набор массы
                 </label>
               </li>
               <li class="radio__item">
                 <label class="radio__label">
                   <input class="radio__input" type="radio" name="program" value="Не знаю (Нужен ваш совет)">
-                  <span class="radio__name">Не знаю (Нужен ваш совет)</span>
+                  Не знаю (Нужен ваш совет)
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__title">Контактные данные (владельца кота)</legend>
-            <label class="form__group">
-              <span class="form__name">E-mail:*</span>
-              <input class="form__field" type="email" name="email" placeholder="kuklachev@gmail.com">
+            <label class="form__label">
+              E-mail:*
+              <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             </label>
-            <label class="form__group">
-              <span class="form__name">Телефон:*</span>
-              <input class="form__field" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+            <label class="form__label">
+              Телефон:*
+              <input class="form__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
             </label>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__title">Комментарий</legend>
-            <label class="form__group">
-              <textarea name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <label class="form__label">
+              <textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </fieldset>
           <fieldset class="form__fieldset">
@@ -95,25 +95,25 @@
               <li class="checkbox__item">
                 <label class="checkbox__label">
                   <input class="checkbox__input" type="checkbox" name="sugarsubstitute" checked>
-                  <span class="checkbox__name">Сахарозаменитель</span>
+                  Сахарозаменитель
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__label">
                   <input class="checkbox__input" type="checkbox" name="drinking-water">
-                  <span class="checkbox__name">Питьевая вода</span>
+                  Питьевая вода
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__label">
                   <input class="checkbox__input" type="checkbox" name="milk">
-                  <span class="checkbox__name">Молоко</span>
+                  Молоко
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__label">
                   <input class="checkbox__input" type="checkbox" name="vitamins">
-                  <span class="checkbox__name">Витамины</span>
+                  Витамины
                 </label>
               </li>
             </ul>
@@ -129,9 +129,7 @@
         <p class="contacts__call">Приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <a class="map" href="">
-        <img src="img/map-image.png" alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-      </a>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.3470241511895!2d30.314899908147545!3d59.938999069038466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595764042543!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <div class="footer__block-group">
         <a class="footer__logo" href="">
           <img src="img/svg/footer-logo" width="128" height="24" alt="Логотип кэт энерджи">
