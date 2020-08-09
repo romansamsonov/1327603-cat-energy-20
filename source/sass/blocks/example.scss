@@ -1,0 +1,21 @@
+.example {
+  background-color: #eaeaea;
+}
+
+.example__title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.example__text {
+  font-family: $minor-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}

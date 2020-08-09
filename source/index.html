@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="header">
       <a class="header__logo header__logo--icon">
-        <img src="img/svg/logo-mobile.svg" width="33" height="38" alt="Иконка кэт энерджи">
+        <img src="img/logo-mobile.svg" width="191" height="38" alt="Иконка кэт энерджи">
       </a>
-      <img class="header__logo header__logo--name" src="img/svg/logo-name.svg" width="101" height="18" alt="Кэт энерджи">
       <nav class="nav">
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
+          <img src="img/icon-mobile-menu.svg" width="24" height="18" alt="Иконка мобильного меню">
         </button>
         <ul class="nav__list">
-          <li class="nav__list-item">
-            <a>Главная</a>
+          <li class="nav__item">
+            <a class="nav__link">Главная</a>
           </li>
-          <li class="nav__list-item">
-            <a href="catalog.html">Каталог продукции</a>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="nav__list-item">
-            <a href="form.html">Подбор программы</a>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -31,59 +32,71 @@
 
     <main>
       <section class="promo">
-        <img class="promo__image" src="img/food-cats.png" alt="Корм для котов">
-        <h1 class="promo__title">Функциональное питание для котов</h1>
-        <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-        <a class="button button--color-green" href="form.html">Подобрать программу</a>
+        <div class="container">
+          <h1 class="promo__title">Функциональное питание для котов</h1>
+          <p class="promo__subtitle">Занялся собой? Займись котом!</p>
+          <img class="promo__image" src="img/index-can-mobile@1x.png" alt="Корм для котов">
+          <a class="promo__button button button--color-green" href="form.html">Подобрать программу</a>
+        </div>
       </section>
       <section class="programs">
-        <h2 class="programs__title">Программы для вашего питомца</h2>
-        <ul class="programs__list">
-          <li class="programs__item">
-            <div class="programs__title">
-              <img class="programs__image" src="img/svg/cat-slim.svg" alt="Иконка сидящего кота">
-              <h3 class="programs__subtitle">Похудение</h3>
-            </div>
-            <p class="programs__text">
-              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-            </p>
-            <a class="programs__link" href="">Каталог slim</a>
-          </li>
-          <li class="programs__item">
-            <div>
-              <img class="programs__image" src="img/svg/cat-pro.svg" alt="Иконка идущего кота">
-              <h3 class="programs__subtitle">Набор массы</h3>
-            </div>
-            <p class="programs__text">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
-            <a class="programs__link" href="">Каталог pro</a>
-          </li>
-        </ul>
+          <div class="container">
+            <h2 class="visually-hidden">Программы для вашего питомца</h2>
+            <ul class="programs__list">
+              <li class="programs__item">
+                <div class="programs__title">
+                  <img class="programs__image" src="img/icon-cat-slim.svg" width="36" height="50" alt="Иконка сидящего кота">
+                  <h3 class="programs__subtitle">Похудение</h3>
+                </div>
+                <p class="programs__text">
+                  Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+                </p>
+                <a class="programs__link" href="">Каталог slim</a>
+              </li>
+              <li class="programs__item">
+                <div class="programs__title">
+                  <img class="programs__image" src="img/icon-cat-pro.svg" width="67" height="28" alt="Иконка идущего кота">
+                  <h3 class="programs__subtitle">Набор массы</h3>
+                </div>
+                <p class="programs__text">
+                  Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+                </p>
+                <a class="programs__link" href="">Каталог pro</a>
+              </li>
+            </ul>
+          </div>
       </section>
       <section class="specification">
         <h2 class="specification__title">Как это работает</h2>
         <ul class="specification__list">
           <li class="specification__item">
-            <img class="specification__image" src="img/svg/icon_leaf.svg" alt="Значок листочка">
+            <div class="specification__image">
+              <img src="img/advantage-leaf@1x.png" width="50" height="50" alt="Значок листочка">
+            </div>
             <p class="specification__text">
               Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
           <li class="specification__item">
-            <img class="specification__image" src="img/svg/icon_tub.svg" alt="Значок миски">
+            <div class="specification__image">
+              <img src="img/advantage-powder@1x.png" width="50" height="50" alt="Значок миски">
+            </div>
             <p class="specification__text">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
           <li class="specification__item">
-            <img class="specification__image" src="img/svg/icon_eat.svg" alt="Значок столовых приборов">
+            <div class="specification__image">
+              <img src="img/advantage-dining@1x.png" width="50" height="50" alt="Значок столовых приборов">
+            </div>
             <p class="specification__text">
               Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
           <li class="specification__item">
-            <img class="specification__image" src="img/svg/icon_alarm" alt="Значок будильника">
+            <div class="specification__image">
+              <img src="img/advantage-clock@1x.png" width="50" height="50" alt="Значок будильника">
+            </div>
             <p class="specification__text">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </p>
@@ -110,14 +123,14 @@
         </div>
         <div class="example__slider slider">
           <div class="slider__image">
-            <img class="slider__image-before" src="img/cat-before.png" alt="Толстый кот">
-            <img class="slider__image-after" src="img/cat-after.png" alt="Худой кот">
+            <img class="slider__image-before" src="img/before-mobile@1x.png" alt="Толстый кот">
+            <img class="slider__image-after" src="img/after-mobile@1x.png" alt="Худой кот">
           </div>
-          <div class="toggle">
-            <span class="toggle__name">Было</span>
-            <div class="toggle__min"></div>
-            <div class="toggle__max"></div>
-            <span class="toggle__name">Стало</span>
+          <div class="slider__toggle">
+            <span class="slider__toggle-name">Было</span>
+            <div class="slider__toggle-min"></div>
+            <div class="slider__toggle-max"></div>
+            <span class="slider__toggle-name">Стало</span>
           </div>
         </div>
       </section>
@@ -128,10 +141,10 @@
         <p class="contacts__call">Приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.3470241511895!2d30.314899908147545!3d59.938999069038466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595764042543!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.3470241511895!2d30.314899908147545!3d59.938999069038466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595764042543!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <div class="footer__block-group">
         <a class="footer__logo" href="">
-          <img src="img/svg/footer-logo" width="128" height="24" alt="Логотип кэт энерджи">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип кэт энерджи">
         </a>
         <ul class="social">
           <li class="social__item">
@@ -146,7 +159,7 @@
         </ul>
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__name">HTML Academy</span>
-          <img class="copyright__logo" src="img/scg/logo-htmlacademy.svg" alt="Логотип HTML Academy">
+          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
