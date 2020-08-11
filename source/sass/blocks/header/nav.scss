@@ -1,0 +1,18 @@
+.nav__toggle {
+  background-color: #ffffff;
+  border: none;
+}
+
+.nav__item {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000000;
+}

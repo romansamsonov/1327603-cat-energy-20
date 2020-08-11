@@ -1,0 +1,26 @@
+.specification__title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.specification__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.specification__text {
+  font-family: $minor-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
