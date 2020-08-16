@@ -1,8 +1,29 @@
 .product {
-  padding: 19px 0 25px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &--plus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product__description {
+  width: 100%;
 }
 
 .product__title {
+  width: 80px;
+  margin-bottom: 18px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -10,13 +31,90 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    margin: 34px auto 14px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &--plus {
+    width: auto;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 135px;
+    }
+  }
 }
 
-.product__info-row {
+.product__info {
   font-family: $minor-font;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin: 14px auto 33px;
+    font-size: 16px;
+  }
+
+  &--plus {
+    justify-content: center;
+    margin: 8px auto 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    text-align: center;
+  }
+}
+
+.product__info-row {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.product__plus {
+  width: 30px;
+  height: 30px;
+  margin: 26px auto 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.product__plus-line {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      top: 29px;
+    }
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
 }

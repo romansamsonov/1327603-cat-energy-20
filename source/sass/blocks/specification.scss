@@ -1,3 +1,19 @@
+.specification {
+  margin: 27px auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 45px auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 71px auto 0;
+    padding: 0 110px;
+    border-bottom: none;
+  }
+}
+
 .specification__title {
   font-family: $main-font;
   font-style: normal;
@@ -5,15 +21,80 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.specification__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 32px 0 47px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 37px;
+    counter-reset: item;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.specification__item {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 247px;
+    height: 280px;
+    padding: 40px 0 0 0;
+
+    &:first-child {
+      width: 230px;
+    }
+
+    &::after {
+      position: absolute;
+      counter-increment: item;
+      content: counters(item, ".") " ";
+      top: 0;
+      right: 0;
+      z-index: -1;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      color: #f2f2f2;
+    }
+  }
 }
 
 .specification__image {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
+  margin-right: 20px;
   background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
 }
 
 .specification__text {
@@ -23,4 +104,9 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

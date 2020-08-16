@@ -1,3 +1,47 @@
+.module-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.module-result__list {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 366px;
+  }
+}
+
+.module-result__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+  }
+}
+
 .module-result__volume {
   font-family: $main-font;
   font-style: normal;
@@ -5,23 +49,78 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .module-result__name {
+  position: absolute;
+  top: 47px;
+  width: 87px;
+  padding: 0 14px;
   font-family: $minor-font;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
   color: #444444;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    top: 62px;
+    width: auto;
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+  }
 }
 
-.module-result__text {
+.module-result__description {
+  margin-top: 32px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 55px 0 75px;
+    text-align: left;
+  }
+}
+
+.module-result__text {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+
+    &:first-child {
+      margin-right: 63px;
+    }
+  }
 }

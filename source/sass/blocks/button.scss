@@ -1,15 +1,16 @@
 .button {
-  padding: 9px 15px;
+  display: block;
+  padding: 10px 15px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid transparent;
   outline: 0;
-  cursor: pointer;
 
   &--color-green {
     color: #ffffff;
