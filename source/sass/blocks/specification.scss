@@ -1,15 +1,12 @@
 .specification {
   margin: 27px auto;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     margin: 45px auto;
-    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 71px auto 0;
-    padding: 0 110px;
     border-bottom: none;
   }
 }

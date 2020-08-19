@@ -18,10 +18,16 @@
   display: flex;
   justify-content: space-between;
   width: 280px;
+  margin-bottom: 35px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     width: 366px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
   }
 }
 
@@ -85,7 +91,6 @@
 }
 
 .module-result__description {
-  margin-top: 32px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -97,7 +102,6 @@
 
   @media (min-width: $tablet-width) {
     width: 174px;
-    margin-top: 0;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
@@ -105,7 +109,6 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
-    margin: 55px 0 75px;
     text-align: left;
   }
 }

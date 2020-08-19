@@ -1,15 +1,20 @@
 .catalog {
-  border-top: 1px solid #d9d9d9;
+  margin: 28px auto;
 
   @media (min-width: $tablet-width) {
     margin: 65px auto;
-    padding: 0 30px;
     border-top: none;
   }
 }
 
+.catalog__container {
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
+}
+
 .catalog__title {
-  margin: 27px 0 41px;
+  margin-bottom: 41px;
   padding: 0 20px;
   font-family: $main-font;
   font-style: normal;
@@ -19,8 +24,8 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     margin-bottom: 83px;
+    padding: 0;
     font-size: 60px;
     line-height: 60px;
   }
@@ -29,7 +34,6 @@
 .catalog__list {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 28px auto;
   list-style: none;
 
   @media (min-width: $tablet-width) {

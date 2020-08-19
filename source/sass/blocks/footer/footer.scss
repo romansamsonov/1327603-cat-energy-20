@@ -1,26 +1,33 @@
 .footer {
-  width: 100%;
-  padding: 0 20px;
-  text-align: center;
   background-color: #f2f2f2;
+}
 
+.footer__container {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 30px 61px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 57px 110px 58px;
+    min-height: 150px;
   }
 }
 
 .footer__logo {
   display: block;
   padding: 39px 0 32px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+}
+
+.footer__social {
+  padding: 20px 0 16px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
   }
 }

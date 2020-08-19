@@ -2,24 +2,20 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 13px;
-  margin-top: 17px;
+  margin: 0 -20px;
   padding: 20px 20px;
   list-style: none;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    margin-top: 62px;
+    margin: 0;
     padding: 25px 28px;
     border: 1px solid #e7e7e7;
   }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-  }
 }
 
-.radio__label {
+.radio__name {
   display: flex;
   align-items: center;
   height: 30px;

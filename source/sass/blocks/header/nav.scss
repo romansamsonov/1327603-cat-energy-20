@@ -34,6 +34,12 @@
     line-height: 24px;
     border-top: none;
   }
+
+  &:last-child {
+    @media (max-width: $mobile-width-only) {
+      border-bottom: 1px solid #e6e6e6;
+    }
+  }
 }
 
 .nav__link {
