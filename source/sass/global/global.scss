@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -18,4 +26,23 @@ img {
 
 .container {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 748px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1260px;
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      max-width: 668px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 1260px;
+    }
+  }
 }

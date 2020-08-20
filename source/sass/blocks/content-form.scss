@@ -1,13 +1,35 @@
+.content-form {
+  margin: 27px 0 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 50px 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 60px 0 80px;
+  }
+}
+
 .content-form__title {
+  margin-bottom: 37px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .content-form__subtitle {
+  box-sizing: initial;
+  width: 230px;
+  margin-bottom: 39px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -15,13 +37,16 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
-}
 
-.content-form__info {
-  font-family: $minor-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #000000;
+  @media (min-width: $tablet-width) {
+    width: 325px;
+    margin-bottom: 65px;
+    padding: 0 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }

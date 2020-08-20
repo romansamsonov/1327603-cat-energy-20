@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.social__link {
+  fill: #666666;
+
+  &--vkontakte svg {
+    width: 23px;
+    height: 16px;
+  }
+
+  &--instagram svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--facebook svg {
+    width: 22px;
+    height: 22px;
+  }
+}
