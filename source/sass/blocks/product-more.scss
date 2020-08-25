@@ -7,8 +7,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0;
+    grid-template-columns: 1fr 1fr 244px;
+    gap: 35px;
     align-items: baseline;
     margin: 0;
   }
@@ -50,7 +50,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 44px;
+    grid-template-columns: 1fr 46px;
   }
 
   dd {
@@ -72,6 +72,5 @@
   @media (min-width: $desktop-width) {
     grid-column: auto;
     width: 244px;
-    margin-left: auto;
   }
 }

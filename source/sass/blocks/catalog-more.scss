@@ -1,20 +1,20 @@
 .catalog-more {
   position: relative;
-  margin: 30px 0;
+  margin: 28px 0 36px;
 
   @media (min-width: $tablet-width) {
-    margin: 70px 0;
+    margin: 67px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 75px 0 85px;
+    margin: 75px 0 86px;
   }
 
   &::before {
     position: absolute;
     content: "";
     z-index: -1;
-    top: 16px;
+    top: 15px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -40,7 +40,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
-    padding: 0 40px;
+    padding: 0 37px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -54,11 +54,11 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-  margin: 35px auto;
+  margin: 31px auto;
 
   @media (min-width: $tablet-width) {
-    gap: 70px;
-    margin: 80px auto;
+    gap: 68px;
+    margin: 78px auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,15 +84,15 @@
 }
 
 .catalog-more__item {
-  padding: 12px 0 19px;
+  padding: 13px 0 17px;
   border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px 28px;
+    padding: 26px 38px 27px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0;
+    padding: 16px 0 15px;
   }
 
   &:first-child {

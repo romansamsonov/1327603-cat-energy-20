@@ -15,10 +15,12 @@
   }
 }
 
-.radio__name {
+.radio__label {
+  position: relative;
   display: flex;
   align-items: center;
   height: 30px;
+  padding-left: 46px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -29,11 +31,37 @@
 
   @media (min-width: $tablet-width) {
     height: 40px;
+    padding-left: 60px;
     font-size: 20px;
     line-height: 30px;
   }
 }
 
 .radio__input {
-  margin-right: 16px;
+  display: none;
+
+  & + .radio__name::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &:checked + .radio__name::before {
+    background-color: #68b738;
+    box-shadow: inset 0 0 0 8px #ffffff;
+
+    @media (min-width: $tablet-width) {
+      box-shadow: inset 0 0 0 10px #ffffff;
+    }
+  }
 }
