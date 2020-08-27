@@ -1,8 +1,13 @@
 .promo {
   background: linear-gradient(#68b738 50%, #ffffff 50%);
   background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: center 0;
   background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
@@ -10,9 +15,16 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 696px;
+    background: linear-gradient(#68b738 90%, #ffffff 10%);
     background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
     background-position: right 0;
-    background-size: 50%;
+    background-size: 50% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -22,6 +34,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     align-items: flex-start;
   }
 }
@@ -39,16 +52,20 @@
 
   @media (min-width: $tablet-width) {
     width: 415px;
-    margin: 40px 0;
+    margin: 32px 88px 41px;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 223px 80px 40px;
+  }
 }
 
 .promo__subtitle {
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -58,10 +75,14 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin: 0 88px 17px;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 80px 52px;
   }
 }
 
@@ -71,16 +92,27 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 262px;
+    left: 102px;
     width: 244px;
     height: 54px;
+    margin-top: 0;
     padding: 15px 25px;
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    margin-left: 80px;
+  }
 }
 
 .promo__image {
-  @media (min-width: $tablet-width) {
-    order: 1;
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 141px;
+    left: 468px;
   }
 }

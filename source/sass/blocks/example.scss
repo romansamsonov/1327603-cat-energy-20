@@ -1,5 +1,5 @@
 .example {
-  padding: 25px 0;
+  padding: 27px 0 25px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
@@ -9,13 +9,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 0 75px;
+    padding: 15px 0 54px;
     background: linear-gradient(to top, #eaeaea 462px, #ffffff 205px);
     border-top: none;
   }
 }
 
 .example__container {
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -23,13 +27,17 @@
 }
 
 .example__wrapper {
+  @media (max-width: $mobile-width-only) {
+    padding: 0 20px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 135px;
   }
 }
 
 .example__title {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -44,12 +52,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
+    margin-top: 54px;
+    margin-bottom: 147px;
   }
 }
 
 .example__text {
   margin-bottom: 25px;
+  margin-right: 1px;
   font-family: $minor-font;
   font-style: normal;
   font-weight: normal;
@@ -65,15 +75,15 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 }
 
 .example__module-result {
-  margin-bottom: 42px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 59px;
+    margin-bottom: 86px;
   }
 
   @media (min-width: $desktop-width) {
