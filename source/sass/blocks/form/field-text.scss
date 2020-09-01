@@ -8,7 +8,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: $basic-dark-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -27,11 +27,36 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
-  border: 1px solid #e7e7e7;
+  color: $basic-dark-grey;
+  border: 1px solid $input-border;
+  outline: none;
+
+  &--сontact-details {
+    padding-right: 48px;
+  }
+
+  &:hover {
+    border: 1px solid $special-gray;
+  }
+
+  &:focus {
+    border: 2px solid $basic-dark-grey;
+  }
+
+  &:focus + .field-text__icon {
+    fill: $basic-green;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 2px solid $status-error;
+  }
+
+  &:invalid:not(:placeholder-shown) + .field-text__icon {
+    fill: $status-error;
+  }
 
   &::placeholder {
-    color: #444444;
+    color: $basic-dark-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -50,7 +75,7 @@
     right: 16px;
     width: 18px;
     height: 13px;
-    fill: #222222;
+    fill: $special-dark-grey-2;
 
     @media (min-width: $tablet-width) {
       top: 19px;
@@ -62,7 +87,7 @@
     right: 13px;
     width: 20px;
     height: 20px;
-    fill: #000000;
+    fill: $black;
 
     @media (min-width: $tablet-width) {
       top: 16px;
@@ -80,12 +105,21 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
-  border: 1px solid #e7e7e7;
+  color: $basic-dark-grey;
+  border: 1px solid $input-border;
   resize: none;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $special-gray;
+  }
+
+  &:focus {
+    border: 2px solid $basic-dark-grey;
+  }
 
   &::placeholder {
-    color: #444444;
+    color: $basic-dark-grey;
   }
 
   @media (min-width: $tablet-width) {

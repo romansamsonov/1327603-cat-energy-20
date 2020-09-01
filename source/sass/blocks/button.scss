@@ -13,14 +13,38 @@
   outline: 0;
 
   &--color-green {
-    color: #ffffff;
-    background-color: #68b738;
-    border-color: #68b738;
+    color: $white;
+    background-color: $basic-green;
+    border-color: $basic-green;
+
+    &:hover,
+    &:focus {
+      background-color: $special-green;
+      border-color: $special-green;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+      background-color: $special-green;
+      border-color: $special-green;
+    }
   }
 
   &--color-grey {
-    color: #444444;
-    background-color: #f2f2f2;
-    border-color: #f2f2f2;
+    color: $basic-dark-grey;
+    background-color: $basic-gray;
+    border-color: $basic-gray;
+
+    &:hover,
+    &:focus {
+      background-color: $special-gray-2;
+      border-color: $special-gray-2;
+    }
+
+    &:active {
+      color: rgba($basic-dark-grey, 0.3);
+      background-color: $special-gray-2;
+      border-color: $special-gray-2;
+    }
   }
 }

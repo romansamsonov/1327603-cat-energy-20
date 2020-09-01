@@ -1,13 +1,9 @@
 .nav {
-  background-color: #ffffff;
+  background-color: $white;
 
   @media (max-width: $mobile-width-only) {
     &--closed {
       display: none;
-    }
-
-    &--nojs {
-      display: block;
     }
   }
 
@@ -43,7 +39,16 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $basic-border;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -61,25 +66,31 @@
   }
 
   &--active {
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
+
     @media (min-width: $tablet-width) {
-      border-bottom: 2px solid #68b738;
+      border-bottom: 2px solid $basic-green;
     }
   }
 
   &--active-index {
     @media (min-width: $desktop-width) {
-      border-bottom: 2px solid #ffffff;
+      border-bottom: 2px solid $white;
     }
   }
 }
 
 .nav__link {
   text-decoration: none;
-  color: #000000;
+  color: $black;
 
   &--index {
     @media (min-width: $desktop-width) {
-      color: #ffffff;
+      color: $white;
     }
   }
 }

@@ -1,0 +1,15 @@
+.no-js {
+  @media (max-width: $mobile-width-only) {
+    .header__wrapper {
+      justify-content: center;
+    }
+
+    .header__nav-toggle {
+      display: none;
+    }
+
+    .nav {
+      display: block;
+    }
+  }
+}

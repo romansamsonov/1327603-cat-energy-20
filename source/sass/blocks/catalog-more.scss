@@ -18,7 +18,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #68b738;
+    background-color: $basic-green;
 
     @media (min-width: $tablet-width) {
       top: 22px;
@@ -35,8 +35,8 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
-  background-color: #ffffff;
+  color: $black;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -74,8 +74,8 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    border-right: 1px solid #cdcdcd;
-    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid $special-gray;
+    border-left: 1px solid $special-gray;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,7 +85,7 @@
 
 .catalog-more__item {
   padding: 13px 0 17px;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $special-gray;
 
   @media (min-width: $tablet-width) {
     padding: 26px 38px 27px;
@@ -96,6 +96,6 @@
   }
 
   &:first-child {
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $special-gray;
   }
 }

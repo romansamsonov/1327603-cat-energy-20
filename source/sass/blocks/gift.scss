@@ -4,7 +4,7 @@
   align-items: center;
   min-height: 200px;
   padding: 64px 0 40px;
-  background-color: #68b738;
+  background-color: $basic-green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -40,7 +40,7 @@
   width: 56px;
   height: 61px;
   margin-bottom: 62px;
-  fill: #ffffff;
+  fill: $white;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -55,7 +55,7 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
 
   @media (min-width: $tablet-width) {
     text-align: left;

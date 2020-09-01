@@ -20,25 +20,29 @@
   display: flex;
   align-items: center;
   height: 30px;
-  padding-left: 46px;
+  padding-left: 33px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     height: 40px;
-    padding-left: 59px;
+    padding-left: 46px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .checkbox__input {
-  display: none;
+  opacity: 0;
 
   & + .checkbox__name::before {
     position: absolute;
@@ -47,12 +51,17 @@
     left: 0;
     width: 30px;
     height: 30px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $special-gray;
 
     @media (min-width: $tablet-width) {
       width: 40px;
       height: 40px;
     }
+  }
+
+  & + .checkbox__name:hover::before,
+  & + .checkbox__name:focus::before {
+    border: 1px solid $special-light-gray;
   }
 
   &:checked + .checkbox__name::after {

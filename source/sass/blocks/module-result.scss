@@ -39,7 +39,7 @@
   align-items: center;
   width: 124px;
   height: 56px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $special-gray;
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
@@ -55,7 +55,7 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -74,8 +74,8 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: #444444;
-  background-color: #eaeaea;
+  color: $basic-dark-grey;
+  background-color: $special-background-gray;
 
   @media (min-width: $tablet-width) {
     top: 62px;
@@ -83,11 +83,11 @@
     padding: 0 8px;
     font-size: 14px;
     line-height: 14px;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: #eaeaea;
+    background-color: $basic-gray;
   }
 }
 
@@ -99,7 +99,7 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     width: 174px;

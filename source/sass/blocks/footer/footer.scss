@@ -1,5 +1,5 @@
 .footer {
-  background-color: #f2f2f2;
+  background-color: $basic-gray;
 }
 
 .footer__container {
@@ -20,12 +20,21 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__social {
   padding: 22px 0 17px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid $special-border;
+  border-bottom: 1px solid $special-border;
 
   @media (min-width: $tablet-width) {
     padding: 0;

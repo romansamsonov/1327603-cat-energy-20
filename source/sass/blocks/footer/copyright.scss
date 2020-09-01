@@ -8,6 +8,16 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: $basic-green;
+    opacity: 0.3;
+  }
 }
 
 .copyright__name {
@@ -16,7 +26,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $basic-dark-grey;
 
   @media (min-width: $tablet-width) {
     margin-right: 11px;
@@ -26,4 +36,5 @@
 .copyright__icon {
   width: 40px;
   height: auto;
+  fill: $basic-dark-grey-2;
 }

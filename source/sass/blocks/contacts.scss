@@ -1,8 +1,8 @@
 .contacts {
-  background-color: #ffffff;
+  background-color: $white;
 
   &--grey {
-    background-color: #f2f2f2;
+    background-color: $basic-gray;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,10 +27,10 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    right: 53%;
+    right: calc(50% + 40px);
     width: 570px;
     padding: 63px 85px 57px 76px;
-    background-color: #ffffff;
+    background-color: $white;
   }
 }
 
@@ -41,7 +41,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #111111;
+  color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -55,7 +55,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $basic-dark-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
