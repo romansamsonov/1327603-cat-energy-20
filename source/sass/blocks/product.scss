@@ -17,10 +17,12 @@
   }
 }
 
-.product__image {
+.product__image-link {
   margin: auto;
+  height: 144px;
 
   @media (min-width: $tablet-width) {
+    height: auto;
     margin-top: -82px;
     margin-bottom: 30px;
   }
@@ -49,7 +51,6 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $special-dark-grey-2;
 
   @media (min-width: $tablet-width) {
     width: 150px;
@@ -68,6 +69,11 @@
       margin-bottom: 24px;
     }
   }
+}
+
+.product__title-link {
+  color: $special-dark-grey-2;
+  text-decoration: none;
 }
 
 .product__info {
