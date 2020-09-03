@@ -25,7 +25,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 164px;
@@ -54,10 +54,10 @@
 .catalog__item {
   min-height: 209px;
   padding: 0 20px 20px;
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid $special-gray-2;
 
   &:last-child {
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid $special-gray-2;
   }
 
   @media (min-width: $tablet-width) {
@@ -66,13 +66,13 @@
     min-height: 430px;
     padding: 0;
     padding-bottom: 40px;
-    background-color: #f2f2f2;
+    background-color: $basic-gray;
     border: none;
 
     &:last-child {
       padding: 0 35px 40px;
-      background: #ffffff;
-      border: 2px solid #f2f2f2;
+      background: $white;
+      border: 2px solid $basic-gray;
     }
   }
 }

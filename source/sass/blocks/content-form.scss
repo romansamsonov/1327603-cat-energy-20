@@ -17,7 +17,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
@@ -36,7 +36,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     width: 325px;

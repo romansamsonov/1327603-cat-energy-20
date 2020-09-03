@@ -12,7 +12,17 @@
 }
 
 .social__link {
-  fill: #666666;
+  fill: $basic-dark-grey-2;
+
+  &:hover,
+  &:focus {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: $basic-green;
+    opacity: 0.3;
+  }
 
   &--vkontakte svg {
     width: 23px;

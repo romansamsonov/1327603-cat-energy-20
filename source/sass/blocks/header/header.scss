@@ -1,5 +1,5 @@
 .header {
-  background-color: #ffffff;
+  background-color: $white;
 
   &--index {
     @media (min-width: $desktop-width) {
@@ -38,33 +38,32 @@
   align-items: center;
   height: 66px;
   padding: 0 20px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $basic-border;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     border: none;
   }
-
-  &--nojs {
-    @media (max-width: $mobile-width-only) {
-      justify-content: center;
-
-      .header__nav-toggle {
-        display: none;
-      }
-    }
-  }
 }
 
 .header__logo {
   width: 190px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .header__nav-toggle {
   position: relative;
   width: 24px;
   height: 18px;
-  background-color: #ffffff;
+  background-color: $white;
   border: none;
   outline: none;
   cursor: pointer;
@@ -76,8 +75,8 @@
     right: 0;
     width: 24px;
     height: 2px;
-    background-color: #000000;
-    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    background-color: $black;
+    box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
   }
 
   &--close-menu {
@@ -89,7 +88,7 @@
       left: 0;
       width: 24px;
       height: 2px;
-      background-color: #000000;
+      background-color: $black;
     }
 
     &::before {

@@ -1,15 +1,11 @@
 const headerWrapper = document.querySelector('.header__wrapper');
 const nav = document.querySelector('.nav');
 const navToggle = document.querySelector('.header__nav-toggle');
+const nojs = document.querySelector('.no-js');
 
-headerWrapper.classList.remove('header__wrapper--nojs');
-nav.classList.remove('nav--nojs');
+nojs.classList.remove('no-js');
 
 navToggle.addEventListener('click', function() {
   navToggle.classList.toggle('header__nav-toggle--close-menu');
-  if (nav.classList.contains('nav--closed')) {
-    nav.classList.remove('nav--closed');
-  } else {
-    nav.classList.add('nav--closed');
-  }
+  nav.classList.toggle('nav--closed')
 });
