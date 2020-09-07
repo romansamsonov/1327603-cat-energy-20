@@ -57,6 +57,14 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
 }
 
 .header__nav-toggle {

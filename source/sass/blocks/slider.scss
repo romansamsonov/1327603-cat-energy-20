@@ -23,7 +23,7 @@
       display: none;
     }
 
-    .slider__toggle::before {
+    .slider__button-toggle::before {
       width: 6px;
 
       @media (min-width: $tablet-width) {
@@ -42,7 +42,7 @@
       clip-path: none;
     }
 
-    .slider__toggle::before {
+    .slider__button-toggle::before {
       width: 74px;
 
       @media (min-width: $tablet-width) {
@@ -153,7 +153,7 @@
   }
 }
 
-.slider__toggle {
+.slider__button-toggle {
   position: relative;
   width: 84px;
   height: 14px;

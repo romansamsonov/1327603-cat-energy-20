@@ -10,6 +10,16 @@
   text-transform: uppercase;
   color: $basic-dark-grey;
 
+  // .field-text--error - ошибка валидации для js
+
+  &--error .field-text__input {
+    border: 2px solid $status-error;
+  }
+
+  &--error .field-text__icon {
+    fill: $status-error;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -31,7 +41,7 @@
   border: 1px solid $input-border;
   outline: none;
 
-  &--сontact-details {
+  &--contact-details {
     padding-right: 48px;
   }
 
@@ -80,6 +90,10 @@
     @media (min-width: $tablet-width) {
       top: 19px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 19px;
+    }
   }
 
   &--phone {
@@ -92,12 +106,17 @@
     @media (min-width: $tablet-width) {
       top: 16px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 17px;
+    }
   }
 }
 
 .field-text__textarea {
   width: 100%;
   min-height: 150px;
+  margin-top: 3px;
   padding: 13px;
   font-family: $main-font;
   font-style: normal;
