@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 71px auto;
+    margin: 69px auto;
   }
 }
 
@@ -28,10 +28,14 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 164px;
+    margin-bottom: 163px;
     padding: 0;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 165px;
   }
 }
 
@@ -47,13 +51,11 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 145px 80px;
+    gap: 143px 80px;
   }
 }
 
 .catalog__item {
-  min-height: 209px;
-  padding: 0 20px 20px;
   border-top: 1px solid $special-gray-2;
 
   &:last-child {
@@ -61,16 +63,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    min-height: 430px;
-    padding: 0;
-    padding-bottom: 40px;
     background-color: $basic-gray;
     border: none;
 
     &:last-child {
-      padding: 0 35px 40px;
       background: $white;
       border: 2px solid $basic-gray;
     }

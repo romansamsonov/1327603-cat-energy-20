@@ -29,12 +29,19 @@
   color: $basic-dark-grey;
 
   @media (min-width: $tablet-width) {
-    margin-right: 11px;
+    margin-right: 17px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 15px;
+    margin-bottom: 0;
   }
 }
 
 .copyright__icon {
   width: 40px;
   height: auto;
+  margin-right: -6px;
   fill: $basic-dark-grey-2;
 }

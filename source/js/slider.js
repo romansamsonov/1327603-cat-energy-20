@@ -1,7 +1,7 @@
 const slider = document.querySelector('.slider');
 const buttonBefore =document.querySelector('.slider__button--before');
 const buttonAfter =document.querySelector('.slider__button--after');
-const sliderToggle =document.querySelector('.slider__toggle');
+const sliderToggle =document.querySelector('.slider__button-toggle');
 
 buttonBefore.addEventListener('click', function() {
   slider.classList.add('slider--before');

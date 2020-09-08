@@ -28,21 +28,28 @@
 }
 
 .form__title-wrapper {
-  margin-left: -20px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-left: -40px;
+    width: 628px;
+    margin: 0 auto;
     margin-bottom: 55px;
+    padding: 0;
 
     &--сontact-details {
       margin-bottom: 74px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .form__title {
   display: inline-block;
+  margin-left: -20px;
   padding: 0 20px;
   font-family: $main-font;
   font-style: normal;
@@ -53,6 +60,7 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
+    margin-left: -40px;
     padding: 0 40px;
     font-size: 36px;
     line-height: 36px;

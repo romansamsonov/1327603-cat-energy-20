@@ -1,10 +1,11 @@
 .gift {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  min-height: 200px;
-  padding: 64px 0 40px;
-  background-color: $basic-green;
+  min-height: 289px;
+  padding: 64px 0 42px;
+  background-color: $promo-background;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -16,7 +17,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
+    min-height: 200px;
     padding: 0 120px 0 90px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
@@ -27,7 +28,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    padding: 58px 0 42px;
+    padding: 62px 0 42px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -39,10 +40,15 @@
 .gift__icon {
   width: 56px;
   height: 61px;
-  margin-bottom: 62px;
   fill: $white;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 58px;
+    height: 63px;
     margin-bottom: 0;
   }
 }
