@@ -3,10 +3,14 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding: 22px 0 17px;
+  border-top: 1px solid $special-border;
+  border-bottom: 1px solid $special-border;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    margin-left: 19px;
+    padding: 0;
+    border: none;
   }
 }
 

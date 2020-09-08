@@ -19,14 +19,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: auto;
   }
 
   &--larger {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
