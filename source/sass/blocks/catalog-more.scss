@@ -1,13 +1,13 @@
 .catalog-more {
   position: relative;
-  margin: 28px 0 35px;
+  margin: 28px 0 34px;
 
   @media (min-width: $tablet-width) {
-    margin: 67px 0;
+    margin: 64px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 75px 0 86px;
+    margin: 74px 0 86px;
   }
 
   &::before {
@@ -64,6 +64,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 245px;
     gap: 80px;
+    margin: 77px auto;
   }
 }
 

@@ -1,4 +1,17 @@
 .product {
+  min-height: 208px;
+  padding: 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    min-height: 430px;
+    padding: 0;
+    padding-bottom: 40px;
+  }
+}
+
+.product__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;

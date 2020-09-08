@@ -2,12 +2,12 @@ ymaps.ready(init);
 function init() {
 
   if (window.innerWidth < 768) {
-    mapCenter = [59.93863506417266,30.323117499999945];
+    mapCenter = [59.93937258927262,30.323975806884704];
     mapZoom = 14;
     imageSize = [62, 53];
     imageOffset = [-31, -53];
   } else if (window.innerWidth < 1300) {
-    mapCenter = [59.93863506417266,30.323117499999945];
+    mapCenter = [59.93937258927262,30.323975806884704];
     mapZoom = 15;
     imageSize = [124, 106];
     imageOffset = [-62, -106];
